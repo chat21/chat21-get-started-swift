@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import Chat21
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +17,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
+        ChatManager.configure()
+        let email = "andspo@ttt.it";
+        let password = "123456";
+        ChatAuth.auth(withEmail: email, password: password) { (user, error) in
+            if let err = error {
+                print("Authentication error: ", err.localizedDescription);
+            }
+            else {
+                let chatm = ChatManager.getInstance()
+                if let user = user {
+                    user.firstname = "Andrea";
+                    user.lastname = "Sponziello";
+                    chatm?.start(with: user)
+                    let conversationsVC = ChatUIManager.getInstance().getConversationsViewController()
+                    if let window = self.window {
+                        window.rootViewController = conversationsVC
+                    }
+                    chatm?.createContact(for: user, withCompletionBlock: { (error) in
+                        print("Contact successfully created.")
+                    })
+                }
+            }
+        }
         return true
     }
 
