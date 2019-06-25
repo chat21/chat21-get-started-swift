@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         ChatManager.configure()
-        let email = "andspo@ttt.it";
-        let password = "123456";
+        let email = "andspo@ttt.it"; /** FIREBASE USER EMAIL **/
+        let password = "123456"; /** FIREBASE USER PASSWORD **/
         ChatAuth.auth(withEmail: email, password: password) { (user, error) in
             if let err = error {
                 print("Authentication error: ", err.localizedDescription);
@@ -28,8 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             else {
                 let chatm = ChatManager.getInstance()
                 if let user = user {
-                    user.firstname = "Andrea";
-                    user.lastname = "Sponziello";
+                    user.firstname = "Andrea";  /** USER FULLNAME **/
+                    user.lastname = "Sponziello"; /** USER LASTNAME **/
                     chatm?.start(with: user)
                     let conversationsVC = ChatUIManager.getInstance().getConversationsViewController()
                     if let window = self.window {

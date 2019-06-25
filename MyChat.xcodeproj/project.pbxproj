@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,8 +12,6 @@
 		B275AAD922C1437500E2D388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B275AAD722C1437500E2D388 /* Main.storyboard */; };
 		B275AADB22C1437600E2D388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B275AADA22C1437600E2D388 /* Assets.xcassets */; };
 		B275AADE22C1437600E2D388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B275AADC22C1437600E2D388 /* LaunchScreen.storyboard */; };
-		B275AAE922C1437700E2D388 /* MyChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275AAE822C1437700E2D388 /* MyChatTests.swift */; };
-		B275AAF422C1437700E2D388 /* MyChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275AAF322C1437700E2D388 /* MyChatUITests.swift */; };
 		B275AB0222C1443300E2D388 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B275AB0122C1443300E2D388 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -43,11 +41,7 @@
 		B275AADD22C1437600E2D388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B275AADF22C1437600E2D388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B275AAE422C1437700E2D388 /* MyChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B275AAE822C1437700E2D388 /* MyChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatTests.swift; sourceTree = "<group>"; };
-		B275AAEA22C1437700E2D388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B275AAEF22C1437700E2D388 /* MyChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B275AAF322C1437700E2D388 /* MyChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatUITests.swift; sourceTree = "<group>"; };
-		B275AAF522C1437700E2D388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B275AB0122C1443300E2D388 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D51E9B1B8239B4E37D550C8E /* Pods-MyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyChat.release.xcconfig"; path = "Target Support Files/Pods-MyChat/Pods-MyChat.release.xcconfig"; sourceTree = "<group>"; };
 		E5CED78CE039CCA95EAA755E /* Pods_MyChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +79,6 @@
 				546ADE5668E5DCF2F815EE49 /* Pods-MyChat.debug.xcconfig */,
 				D51E9B1B8239B4E37D550C8E /* Pods-MyChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -93,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				B275AAD222C1437500E2D388 /* MyChat */,
-				B275AAE722C1437700E2D388 /* MyChatTests */,
-				B275AAF222C1437700E2D388 /* MyChatUITests */,
 				B275AAD122C1437500E2D388 /* Products */,
 				22B8F297B09C9259EC960550 /* Pods */,
 				DD49A741C7375A1F5B97C483 /* Frameworks */,
@@ -122,24 +113,6 @@
 				B275AADF22C1437600E2D388 /* Info.plist */,
 			);
 			path = MyChat;
-			sourceTree = "<group>";
-		};
-		B275AAE722C1437700E2D388 /* MyChatTests */ = {
-			isa = PBXGroup;
-			children = (
-				B275AAE822C1437700E2D388 /* MyChatTests.swift */,
-				B275AAEA22C1437700E2D388 /* Info.plist */,
-			);
-			path = MyChatTests;
-			sourceTree = "<group>";
-		};
-		B275AAF222C1437700E2D388 /* MyChatUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B275AAF322C1437700E2D388 /* MyChatUITests.swift */,
-				B275AAF522C1437700E2D388 /* Info.plist */,
-			);
-			path = MyChatUITests;
 			sourceTree = "<group>";
 		};
 		DD49A741C7375A1F5B97C483 /* Frameworks */ = {
@@ -352,7 +325,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B275AAE922C1437700E2D388 /* MyChatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +332,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B275AAF422C1437700E2D388 /* MyChatUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,7 +498,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.frontiere21.MyChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frontiere21.MyChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -546,7 +517,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.frontiere21.MyChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frontiere21.MyChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
